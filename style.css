@@ -1,0 +1,58 @@
+body
+{
+  color: white;
+  background:lightskyblue;
+  font-size: 16px;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_hand_gesture_name ,#result_hand_gesture_name2  
+{
+  color: black;
+}
+.hand_gesture_name
+{
+  font-size: 40px;
+}
+.hand_gesture
+{
+  font-size:48px;
+}
+.heading{
+font-size:18px;
+border-radius:10px; 
+letter-spacing:10px;
+color:blue; 
+}
+label{
+font-size: 14px; 
+color:green;
+padding:6px;
+border-radius: 10px; 
+background-color:white;
+
+}
+#camera , #result{
+border-style: ridge;
+border-color: black; 
+border-width: 6px;
+border-radius: 10px; 
+}
+
+#Capture , #Predict{
+  border-color: blue;
+  border-width: 4px; 
+  border-style: dotted;
+  border-radius: 4px;
+  font-size: 20px; 
+  color:darkmagenta;
+  
+}

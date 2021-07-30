@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Predict your hand gesture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h3 class="btn btn-danger heading"><b>Gesture Web Application</b>
+<br>
+      <br><br>
+<div>&#9996;</div> 
+<hr> 
+<div>&#128077;</div>
+<hr>
+<div>&#129305;</div>
+<hr>
+<div>&#9995;</div>
+<hr>
+<div>&#9994;</div>
+<hr>
+<div>&#128073;</div>
+</h3>
+      <p style="font-size: 22px;">Check your hand gestures</p>
+      <p>These are the following hand gestures</p>
+      <div>&#9996;</div> 
+<hr> 
+<div>&#128077;</div>
+<hr>
+<div>&#129305;</div>
+<hr>
+<div>&#9995;</div>
+      	<br>
+        <b style="color: crimson">Is your hand gesture is victory ?</b>
+        <br>
+        <b style="color:chartreuse">or High five ? </b>
+        <br>
+        <b style="color:greenyellow">or Good job</b>
+        <br>
+        <b style="color:chocolate">or Call me</b>
+        <br>
+      </p>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label>Webcam view-</label> 
+<div id="camera"></div>
+<br><br>
+<button class="btn btn-success" onclick="take_snapshot()" id="Capture"><b>Capture Hand gesture</b></button>  
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label>Prediction 1 - </label>  
+<p class="hand_gesture_name" id="result_hand_gesture_name"></p>
+<p class="hand_gesture" id="update_hand_gesture"></p>
+
+<label>Prediction 2 - </label>  
+<p class="hand_gesture_name" id="result_hand_gesture_name2"></p>
+<p class="hand_gesture" id="update_hand_gesture2"></p>
+
+</div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+<div id="result"></div>
+        <br><br>
+<button class="btn btn-success" onclick="check()" id="Predict"><b>Predict Hand gesture</b></button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
